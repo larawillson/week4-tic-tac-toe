@@ -29,14 +29,14 @@ theBoard={'top-L':'','top-M':'','top-R':'',
 
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
-    return((board['top-L']==player and board['top-M']==player and board['top-R']) or #top horizontal
-           (board['mid-L']==player and board['mid-M']==player and board['mid-R']) or #middle horizontal
-           (board['low-L']==player and board['low-M']==player and board['low-R']) or #bottom horizontal
-           (board['top-L']==player and board['mid-L']==player and board['low-L']) or #left vertical
-           (board['top-M']==player and board['mid-M']==player and board['low-M']) or #middle vertical
-           (board['top-R']==player and board['mid-R']==player and board['low-R']) or #right vertical
-           (board['top-L']==player and board['mid-M']==player and board['low-R']) or #diagonal
-           (board['top-R']==player and board['mid-M']==player and board['low-L']))  #diagonal
+    return((board['top-L']==player and board['top-M']==player and board['top-R']==player) or #top horizontal
+           (board['mid-L']==player and board['mid-M']==player and board['mid-R']==player) or #middle horizontal
+           (board['low-L']==player and board['low-M']==player and board['low-R']==player) or #bottom horizontal
+           (board['top-L']==player and board['mid-L']==player and board['low-L']==player) or #left vertical
+           (board['top-M']==player and board['mid-M']==player and board['low-M']==player) or #middle vertical
+           (board['top-R']==player and board['mid-R']==player and board['low-R']==player) or #right vertical
+           (board['top-L']==player and board['mid-M']==player and board['low-R']==player) or #diagonal
+           (board['top-R']==player and board['mid-M']==player and board['low-L']==player))  #diagonal
 
     # TO DO #################################################################
     # Add comments to each line in this function to describe what           #
